@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hai817i_ml"
+version = "0.1.0"
+description = "Projet Machine Learning - Méthodes classiques"
+dependencies = [
+    "contractions",
+    "joblib",
+    "matplotlib",
+    "numpy",
+    "optuna",
+    "pandas",
+    "plotly",
+    "scikit_learn",
+    "seaborn",
+    "spacy",
+    "wordcloud"
+]
+
+[tool.setuptools]
+# On indique à setuptools où chercher le code source
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+# On lui dit de scanner le dossier src pour trouver les packages automatiquement
+where = ["src"]

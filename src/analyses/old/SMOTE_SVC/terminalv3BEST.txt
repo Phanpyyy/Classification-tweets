@@ -1,0 +1,225 @@
+PS D:\mes programmes python\HAI817I-Machine-learning-m-thodes-classiques> & D:/Python/python.exe "d:/mes programmes python/HAI817I-Machine-learning-m-thodes-classiques/src/code_python/recherche_classifieur/meilleur_classifieur.py"
+nom de la matrice : SMOTE
+------ Chargement du dataset depuis : D:\mes programmes python\HAI817I-Machine-learning-m-thodes-classiques\src\matrices\SMOTE.csv
+   1st  4th   HASHTAG  HASHTAG HASHTAG  HASHTAG USER  HASHTAG apply  HASHTAG article  HASHTAG call  HASHTAG cause  HASHTAG engineer  ...  year  year url  yesterday  york  york city  young  youth  youtube  yrs  science_related
+0  0.0  0.0  0.000000              0.0           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                0
+1  0.0  0.0  0.000000              0.0           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                0
+2  0.0  0.0  0.199426              0.0           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                1
+3  0.0  0.0  0.000000              0.0           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                1
+4  0.0  0.0  0.000000              0.0           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                1
+
+[5 rows x 1768 columns]
+(1530, 1768)
+(1530, 1767)
+(1530,)
+format du jeu d'apprentissage : (1071, 1767)
+format du jeu de test : (459, 1767)
+Répartition des classes :
+Classe 0 : 765 échantillons
+Classe 1 : 765 échantillons
+KFold sur SVC : accuracy moyenne : 0.8758307372793356 écart-type : 0.029501512400166647
+Accuracy : 0.8976034858387799
+Matrice de confusion
+[[216  14]
+ [ 33 196]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.87      0.94      0.90       230
+           1       0.93      0.86      0.89       229
+
+    accuracy                           0.90       459
+   macro avg       0.90      0.90      0.90       459
+weighted avg       0.90      0.90      0.90       459
+
+Quel classifieur choisissez-vous
+:SVC
+--------------------------- Optuna ---------------------------
+
+
+[I 2026-04-28 12:38:51,130] A new study created in memory with name: no-name-1e6e336a-5ad6-425f-b8ce-559973c9d45a
+Exception ignored in: <function Image.__del__ at 0x000001B327B88EA0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 4073, in __del__
+    self.tk.call('image', 'delete', self.name)
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+[I 2026-04-28 12:39:20,206] Trial 0 finished with value: 0.83754835905238 and parameters: {'C': 15, 'gamma': 0.01, 'kernel': 'rbf', 'degree': 4, 'class_weight': None}. Best is trial 0 with value: 0.83754835905238.
+[I 2026-04-28 12:39:25,050] Trial 1 finished with value: 0.5060725929145838 and parameters: {'C': 10, 'gamma': 'scale', 'kernel': 'poly', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 0 with value: 0.83754835905238.
+Exception ignored in: <function Image.__del__ at 0x000001B327B88EA0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 4073, in __del__
+    self.tk.call('image', 'delete', self.name)
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B327ADE2A0>
+Traceback (most recent call last):
+  File "D:\Python\Lib\tkinter\__init__.py", line 410, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: main thread is not in main loop
+[I 2026-04-28 12:39:51,314] Trial 2 finished with value: 0.5367441860465116 and parameters: {'C': 6, 'gamma': 8e-05, 'kernel': 'rbf', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 0 with value: 0.83754835905238.
+[I 2026-04-28 12:39:56,405] Trial 3 finished with value: 0.5367441860465116 and parameters: {'C': 0.4, 'gamma': 0.005, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 0 with value: 0.83754835905238.
+[I 2026-04-28 12:40:00,929] Trial 4 finished with value: 0.8422256031297545 and parameters: {'C': 20, 'gamma': 0.01, 'kernel': 'rbf', 'degree': 3, 'class_weight': None}. Best is trial 4 with value: 0.8422256031297545.
+[I 2026-04-28 12:40:05,731] Trial 5 finished with value: 0.8637035427081068 and parameters: {'C': 8, 'gamma': 'scale', 'kernel': 'linear', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:10,711] Trial 6 finished with value: 0.800221690936753 and parameters: {'C': 0.1, 'gamma': 0.1, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:15,604] Trial 7 finished with value: 0.8637035427081068 and parameters: {'C': 7.7, 'gamma': 0.1, 'kernel': 'linear', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:20,405] Trial 8 finished with value: 0.504207780917192 and parameters: {'C': 7, 'gamma': 1, 'kernel': 'poly', 'degree': 5, 'class_weight': None}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:25,310] Trial 9 finished with value: 0.8637035427081068 and parameters: {'C': 8.2, 'gamma': 5e-05, 'kernel': 'linear', 'degree': 3, 'class_weight': None}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:30,057] Trial 10 finished with value: 0.8637035427081068 and parameters: {'C': 8, 'gamma': 'scale', 'kernel': 'linear', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:34,881] Trial 11 finished with value: 0.8637035427081068 and parameters: {'C': 7.8, 'gamma': 10, 'kernel': 'linear', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:40,276] Trial 12 finished with value: 0.8637035427081068 and parameters: {'C': 7.7, 'gamma': 0.002, 'kernel': 'linear', 'degree': 2, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:45,216] Trial 13 finished with value: 0.8599652249510976 and parameters: {'C': 11, 'gamma': 7, 'kernel': 'linear', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:50,201] Trial 14 finished with value: 0.8599608780699848 and parameters: {'C': 12, 'gamma': 0.1, 'kernel': 'linear', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:40:55,403] Trial 15 finished with value: 0.5367441860465116 and parameters: {'C': 0.01, 'gamma': 0.001, 'kernel': 'linear', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:00,184] Trial 16 finished with value: 0.5864377309280591 and parameters: {'C': 8.5, 'gamma': 2, 'kernel': 'poly', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:04,044] Trial 17 finished with value: 0.8618300369484894 and parameters: {'C': 1.2, 'gamma': 5, 'kernel': 'linear', 'degree': 2, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:07,998] Trial 18 finished with value: 0.861838730710715 and parameters: {'C': 1.1, 'gamma': 'scale', 'kernel': 'linear', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:12,942] Trial 19 finished with value: 0.5516279069767441 and parameters: {'C': 1.4, 'gamma': 0.1, 'kernel': 'poly', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:17,955] Trial 20 finished with value: 0.5367441860465116 and parameters: {'C': 0.001, 'gamma': 0.002, 'kernel': 'linear', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:22,792] Trial 21 finished with value: 0.8637035427081068 and parameters: {'C': 8.2, 'gamma': 5e-05, 'kernel': 'linear', 'degree': 3, 'class_weight': None}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:27,832] Trial 22 finished with value: 0.8637035427081068 and parameters: {'C': 7.7, 'gamma': 5e-05, 'kernel': 'linear', 'degree': 3, 'class_weight': None}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:32,679] Trial 23 finished with value: 0.8637035427081068 and parameters: {'C': 8.1, 'gamma': 5e-05, 'kernel': 'linear', 'degree': 3, 'class_weight': None}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:37,529] Trial 24 finished with value: 0.8637035427081068 and parameters: {'C': 8, 'gamma': 2, 'kernel': 'linear', 'degree': 3, 'class_weight': None}. Best is trial 5 with value: 0.8637035427081068.
+[I 2026-04-28 12:41:42,358] Trial 25 finished with value: 0.8646337752662465 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'linear', 'degree': 3, 'class_weight': None}. Best is trial 25 with value: 0.8646337752662465.
+[I 2026-04-28 12:41:47,182] Trial 26 finished with value: 0.8646337752662465 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'linear', 'degree': 5, 'class_weight': None}. Best is trial 25 with value: 0.8646337752662465.
+[I 2026-04-28 12:41:52,055] Trial 27 finished with value: 0.8646337752662465 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'linear', 'degree': 2, 'class_weight': None}. Best is trial 25 with value: 0.8646337752662465.
+[I 2026-04-28 12:41:56,798] Trial 28 finished with value: 0.8786437730928058 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 28 with value: 0.8786437730928058.
+[I 2026-04-28 12:42:01,587] Trial 29 finished with value: 0.8786437730928058 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 28 with value: 0.8786437730928058.
+[I 2026-04-28 12:42:06,339] Trial 30 finished with value: 0.8786437730928058 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 28 with value: 0.8786437730928058.
+[I 2026-04-28 12:42:11,086] Trial 31 finished with value: 0.8786437730928058 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 28 with value: 0.8786437730928058.
+[I 2026-04-28 12:42:15,810] Trial 32 finished with value: 0.8786437730928058 and parameters: {'C': 6.5, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 28 with value: 0.8786437730928058.
+[I 2026-04-28 12:42:20,489] Trial 33 finished with value: 0.8711671375787873 and parameters: {'C': 1.3, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 28 with value: 0.8786437730928058.
+[I 2026-04-28 12:42:25,219] Trial 34 finished with value: 0.8814518582916758 and parameters: {'C': 8.3, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:42:30,280] Trial 35 finished with value: 0.5367441860465116 and parameters: {'C': 7.6, 'gamma': 8e-05, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:42:35,383] Trial 36 finished with value: 0.798335144533797 and parameters: {'C': 8.3, 'gamma': 0.005, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:42:40,102] Trial 37 finished with value: 0.8795783525320582 and parameters: {'C': 6.8, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:42:44,919] Trial 38 finished with value: 0.8795783525320582 and parameters: {'C': 6.8, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:42:49,838] Trial 39 finished with value: 0.809550097804825 and parameters: {'C': 6.8, 'gamma': 0.01, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:42:54,915] Trial 40 finished with value: 0.758161269289285 and parameters: {'C': 6.8, 'gamma': 10, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:42:59,644] Trial 41 finished with value: 0.8805172788524235 and parameters: {'C': 9, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:04,397] Trial 42 finished with value: 0.8805172788524235 and parameters: {'C': 9, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:09,454] Trial 43 finished with value: 0.8805172788524235 and parameters: {'C': 9, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:14,486] Trial 44 finished with value: 0.8020647685285809 and parameters: {'C': 3, 'gamma': 5, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:19,570] Trial 45 finished with value: 0.5367441860465116 and parameters: {'C': 9, 'gamma': 0.001, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:24,604] Trial 46 finished with value: 0.7824516409476201 and parameters: {'C': 9, 'gamma': 7, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:29,383] Trial 47 finished with value: 0.8805172788524235 and parameters: {'C': 9, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:34,401] Trial 48 finished with value: 0.5367441860465116 and parameters: {'C': 9, 'gamma': 8e-05, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+[I 2026-04-28 12:43:39,329] Trial 49 finished with value: 0.5637209302325582 and parameters: {'C': 9, 'gamma': 0.01, 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 34 with value: 0.8814518582916758.
+Meilleur score pour SVC : 0.881
+Meilleurs paramètres pour SVC : {'C': 8.3, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}
+Accuracy : 0.8997821350762527
+Matrice de confusion
+[[206  24]
+ [ 22 207]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.90      0.90      0.90       230
+           1       0.90      0.90      0.90       229
+
+    accuracy                           0.90       459
+   macro avg       0.90      0.90      0.90       459
+weighted avg       0.90      0.90      0.90       459
+
+Accuracy  sur le jeu de test : 0.9
+###################################
+# SAUVEGARDE
+###################################
+nom de la pipeline : SMOTE_SVC_BEST
+(1526, 1767)
+(1526,)
+format du jeu d'apprentissage : (1068, 1767)
+format du jeu de test : (458, 1767)
+model créé
+pipeline créée
+{'C': 8.3, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}
+modèle entrainée
+pipeline saved
+Le modèle sera sauvegardé ici : D:\mes programmes python\HAI817I-Machine-learning-m-thodes-classiques
+modèle chargée
+prediction réalisée
+résultat du pipeline :
+      1st  4th   HASHTAG  HASHTAG HASHTAG  HASHTAG USER  HASHTAG apply  HASHTAG article  HASHTAG call  HASHTAG cause  HASHTAG engineer  ...  year  year url  yesterday  york  york city  young  youth  youtube  yrs  science_related
+142   0.0  0.0  0.000000         0.000000           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                0
+537   0.0  0.0  0.170022         0.000000           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                1
+249   0.0  0.0  0.000000         0.000000           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                1
+1475  0.0  0.0  0.231054         0.093923           0.0            0.0              0.0           0.0            0.0               0.0  ...   0.0       0.0        0.0   0.0        0.0    0.0    0.0      0.0  0.0                1
+
+[4 rows x 1768 columns]
+PS D:\mes programmes python\HAI817I-Machine-learning-m-thodes-classiques> 
+
+
+-------------------------------ANALYSE------------------------------------------------
+
+KFold sur SVC : accuracy moyenne : 0.8758307372793356 écart-type : 0.029501512400166647
+Accuracy : 0.8976034858387799
+Matrice de confusion
+[[216  14]
+ [ 33 196]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.87      0.94      0.90       230
+           1       0.93      0.86      0.89       229
+
+    accuracy                           0.90       459
+   macro avg       0.90      0.90      0.90       459
+weighted avg       0.90      0.90      0.90       459
+
+
+
+Meilleurs paramètres pour SVC : {'C': 8.3, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}
+Accuracy : 0.8997821350762527
+Matrice de confusion
+[[206  24]
+ [ 22 207]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.90      0.90      0.90       230
+           1       0.90      0.90      0.90       229
+
+    accuracy                           0.90       459
+   macro avg       0.90      0.90      0.90       459
+weighted avg       0.90      0.90      0.90       459

@@ -1,0 +1,21 @@
+config = Config(urls=True, mentions=True, emojis=False, hashtags=1, punct=True, min_df=3, max_df=0.8, ngrams= (1,2), equilibrage="SMOTE", colonne_y=noms[1])
+
+500 tests optuna
+
+Meilleur score pour SVC : 0.749
+Meilleurs paramètres pour SVC : {'C': 1.0182090209935792, 'gamma': 0.001, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}
+Accuracy : 0.7866666666666666
+Matrice de confusion
+[[18  4]
+ [12 41]]
+Classification report
+              precision    recall  f1-score   support
+
+         0.0       0.60      0.82      0.69        22
+         1.0       0.91      0.77      0.84        53
+
+    accuracy                           0.79        75
+   macro avg       0.76      0.80      0.76        75
+weighted avg       0.82      0.79      0.79        75
+
+Accuracy  sur le jeu de test : 0.787

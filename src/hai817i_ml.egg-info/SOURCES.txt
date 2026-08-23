@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/code_python/__init__.py
+src/code_python/pretraitement/__init__.py
+src/code_python/recherche_classifieur/__init__.py
+src/code_python/recherche_classifieur/data_projet.py
+src/code_python/recherche_classifieur/feature_discriminante.py
+src/code_python/recherche_classifieur/get_df.py
+src/code_python/recherche_classifieur/meilleur_classifieur.py
+src/code_python/recherche_classifieur/meilleur_param.py
+src/code_python/recherche_classifieur/mise_en_production.py
+src/code_python/recherche_classifieur/visualisation.py
+src/hai817i_ml.egg-info/PKG-INFO
+src/hai817i_ml.egg-info/SOURCES.txt
+src/hai817i_ml.egg-info/dependency_links.txt
+src/hai817i_ml.egg-info/requires.txt
+src/hai817i_ml.egg-info/top_level.txt

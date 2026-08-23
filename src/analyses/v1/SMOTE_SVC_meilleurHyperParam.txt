@@ -1,0 +1,130 @@
+nom de la matrice : baseSMOTE
+------ Chargement du dataset depuis : D:\mes programmes python\HAI817I-Machine-learning-m-thodes-classiques\src\matrices\baseSMOTE.csv
+   USER  USER USER  USER cause  USER good  USER help  USER need  USER report  USER stop  ...  world  world url  write  wrong  year  year url  york  science_related
+0   0.0        0.0         0.0        0.0        0.0        0.0          0.0        0.0  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                0
+1   0.0        0.0         0.0        0.0        0.0        0.0          0.0        0.0  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                0
+2   0.0        0.0         0.0        0.0        0.0        0.0          0.0        0.0  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                1
+3   0.0        0.0         0.0        0.0        0.0        0.0          0.0        0.0  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                1
+4   0.0        0.0         0.0        0.0        0.0        0.0          0.0        0.0  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                1
+
+[5 rows x 608 columns]
+(1530, 608)
+(1530, 607)
+(1530,)
+format du jeu d'apprentissage : (1071, 607)
+format du jeu de test : (459, 607)
+Répartition des classes :
+Classe 0 : 765 échantillons
+Classe 1 : 765 échantillons
+KFold sur SVC : accuracy moyenne : 0.8664935964001386 écart-type : 0.027977513864835966
+Accuracy : 0.8758169934640523
+Matrice de confusion
+[[197  33]
+ [ 24 205]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.89      0.86      0.87       230
+           1       0.86      0.90      0.88       229
+
+    accuracy                           0.88       459
+   macro avg       0.88      0.88      0.88       459
+weighted avg       0.88      0.88      0.88       459
+
+Quel classifieur choisissez-vous
+:SVC
+--------------------------- Optuna ---------------------------
+
+
+[I 2026-05-11 16:35:57,953] A new study created in memory with name: no-name-f4943f77-4f50-44e9-b2dd-b37b48d43ed2
+[I 2026-05-11 16:36:04,227] Trial 0 finished with value: 0.5004651162790698 and parameters: {'C': 7.6, 'gamma': 8e-05, 'kernel': 'poly', 'degree': 4, 'class_weight': None}. Best is trial 0 with value: 0.5004651162790698.
+[I 2026-05-11 16:36:05,251] Trial 1 finished with value: 0.8179482721147575 and parameters: {'C': 8.5, 'gamma': 0.01, 'kernel': 'linear', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:07,128] Trial 2 finished with value: 0.5172093023255814 and parameters: {'C': 8.4, 'gamma': 8e-05, 'kernel': 'rbf', 'degree': 2, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:09,166] Trial 3 finished with value: 0.5424429471853945 and parameters: {'C': 1.3, 'gamma': 0.01, 'kernel': 'rbf', 'degree': 2, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:11,298] Trial 4 finished with value: 0.5013953488372093 and parameters: {'C': 8.1, 'gamma': 0.1, 'kernel': 'poly', 'degree': 5, 'class_weight': None}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:13,298] Trial 5 finished with value: 0.5210128232992828 and parameters: {'C': 6.8, 'gamma': 0.1, 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:15,819] Trial 6 finished with value: 0.7777743968702457 and parameters: {'C': 7.9, 'gamma': 10, 'kernel': 'rbf', 'degree': 4, 'class_weight': None}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:17,741] Trial 7 finished with value: 0.8001564877200609 and parameters: {'C': 7.7, 'gamma': 2, 'kernel': 'poly', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:20,041] Trial 8 finished with value: 0.5172093023255814 and parameters: {'C': 3, 'gamma': 5e-05, 'kernel': 'rbf', 'degree': 4, 'class_weight': None}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:22,461] Trial 9 finished with value: 0.6975787872201695 and parameters: {'C': 8.4, 'gamma': 0.002, 'kernel': 'rbf', 'degree': 4, 'class_weight': 'balanced'}. Best is trial 1 with value: 0.8179482721147575.
+[I 2026-05-11 16:36:24,519] Trial 10 finished with value: 0.830097804825038 and parameters: {'C': 0.8, 'gamma': 0.01, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:26,192] Trial 11 finished with value: 0.8179482721147575 and parameters: {'C': 8.5, 'gamma': 0.01, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:28,246] Trial 12 finished with value: 0.830097804825038 and parameters: {'C': 0.8, 'gamma': 5, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:29,459] Trial 13 finished with value: 0.8179569658769832 and parameters: {'C': 7.5, 'gamma': 5, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:30,931] Trial 14 finished with value: 0.830097804825038 and parameters: {'C': 0.8, 'gamma': 7, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:32,365] Trial 15 finished with value: 0.830097804825038 and parameters: {'C': 0.8, 'gamma': 1, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:33,947] Trial 16 finished with value: 0.830097804825038 and parameters: {'C': 0.8, 'gamma': 'scale', 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:35,026] Trial 17 finished with value: 0.8170093457943925 and parameters: {'C': 15, 'gamma': 0.001, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:36,112] Trial 18 finished with value: 0.8188828515540101 and parameters: {'C': 9, 'gamma': 5, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:37,156] Trial 19 finished with value: 0.8151488806781135 and parameters: {'C': 12, 'gamma': 0.005, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:38,295] Trial 20 finished with value: 0.8160834601173658 and parameters: {'C': 7.8, 'gamma': 5, 'kernel': 'linear', 'degree': 5, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:39,673] Trial 21 finished with value: 0.830097804825038 and parameters: {'C': 0.8, 'gamma': 7, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:40,752] Trial 22 finished with value: 0.8151401869158879 and parameters: {'C': 13, 'gamma': 7, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:41,817] Trial 23 finished with value: 0.8151488806781135 and parameters: {'C': 8.3, 'gamma': 7, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:42,874] Trial 24 finished with value: 0.8151488806781135 and parameters: {'C': 8.2, 'gamma': 0.005, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:43,944] Trial 25 finished with value: 0.8179569658769832 and parameters: {'C': 7, 'gamma': 1, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:44,976] Trial 26 finished with value: 0.8151488806781135 and parameters: {'C': 20, 'gamma': 0.001, 'kernel': 'linear', 'degree': 3, 'class_weight': None}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:46,332] Trial 27 finished with value: 0.830097804825038 and parameters: {'C': 0.8, 'gamma': 10, 'kernel': 'linear', 'degree': 3, 'class_weight': 'balanced'}. Best is trial 10 with value: 0.830097804825038.
+[I 2026-05-11 16:36:48,164] Trial 28 finished with value: 0.8609215387959139 and parameters: {'C': 8, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': 'balanced'}. Best is trial 28 with value: 0.8609215387959139.
+[I 2026-05-11 16:36:49,935] Trial 29 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:36:51,658] Trial 30 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:36:53,380] Trial 31 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:36:55,268] Trial 32 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:36:57,059] Trial 33 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:36:58,885] Trial 34 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:00,650] Trial 35 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:02,377] Trial 36 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:04,178] Trial 37 finished with value: 0.5032558139534884 and parameters: {'C': 1.4, 'gamma': 8e-05, 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:05,938] Trial 38 finished with value: 0.861838730710715 and parameters: {'C': 1.2, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:07,713] Trial 39 finished with value: 0.8618561182351663 and parameters: {'C': 6, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:09,502] Trial 40 finished with value: 0.858117800478157 and parameters: {'C': 1.1, 'gamma': 2, 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:11,252] Trial 41 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:12,962] Trial 42 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:14,838] Trial 43 finished with value: 0.5032558139534884 and parameters: {'C': 11, 'gamma': 5e-05, 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:16,849] Trial 44 finished with value: 0.5032558139534884 and parameters: {'C': 0.001, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:18,787] Trial 45 finished with value: 0.5032558139534884 and parameters: {'C': 6.5, 'gamma': 0.002, 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:20,521] Trial 46 finished with value: 0.8179656596392089 and parameters: {'C': 1, 'gamma': 0.1, 'kernel': 'rbf', 'degree': 4, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:22,286] Trial 47 finished with value: 0.5453031949576179 and parameters: {'C': 10, 'gamma': 'scale', 'kernel': 'poly', 'degree': 5, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:24,109] Trial 48 finished with value: 0.5032558139534884 and parameters: {'C': 0.1, 'gamma': 8e-05, 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+[I 2026-05-11 16:37:25,882] Trial 49 finished with value: 0.8618561182351663 and parameters: {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}. Best is trial 29 with value: 0.8618561182351663.
+Meilleur score pour SVC : 0.862
+Meilleurs paramètres pour SVC : {'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}
+Accuracy : 0.8758169934640523
+Matrice de confusion
+[[189  41]
+ [ 16 213]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.92      0.82      0.87       230
+           1       0.84      0.93      0.88       229
+
+    accuracy                           0.88       459
+   macro avg       0.88      0.88      0.88       459
+weighted avg       0.88      0.88      0.88       459
+
+Accuracy  sur le jeu de test : 0.876
+###################################
+# SAUVEGARDE
+###################################
+nom de la pipeline : SMOTE_SVC_meilleurHyperParam
+(1526, 607)
+(1526,)
+format du jeu d'apprentissage : (1068, 607)
+format du jeu de test : (458, 607)
+model créé
+pipeline créée
+{'C': 7.3, 'gamma': 'scale', 'kernel': 'poly', 'degree': 2, 'class_weight': None}
+modèle entrainée
+pipeline saved
+Le modèle sera sauvegardé ici : D:\mes programmes python\HAI817I-Machine-learning-m-thodes-classiques
+modèle chargée
+prediction réalisée
+résultat du pipeline :
+          USER  USER USER  USER cause  USER good  USER help  USER need  USER report  USER stop  ...  world  world url  write  wrong  year  year url  york  science_related
+1203  0.000000        0.0         0.0        0.0        0.0        0.0          0.0   0.000000  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                1
+114   0.000000        0.0         0.0        0.0        0.0        0.0          0.0   0.000000  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                0
+18    0.117668        0.0         0.0        0.0        0.0        0.0          0.0   0.294693  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                0
+322   0.000000        0.0         0.0        0.0        0.0        0.0          0.0   0.000000  ...    0.0        0.0    0.0    0.0   0.0       0.0   0.0                0
+
+[4 rows x 608 columns]

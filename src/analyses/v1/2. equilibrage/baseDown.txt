@@ -1,0 +1,107 @@
+nom de la matrice : baseDown
+------ Chargement du dataset depuis : D:\mes programmes python\HAI817I-Machine-learning-m-thodes-classiques\src\matrices\baseDown.csv
+   scientific_context  scientific_reference  scientific_claim  science_related             tweet_id      USER  ...  world url  write  wrong  year  year url  york
+0                 0.0                   0.0               0.0                0   833408997524910080  0.173378  ...        0.0    0.0    0.0   0.0       0.0   0.0
+1                 0.0                   0.0               0.0                0   706975100856373248  0.000000  ...        0.0    0.0    0.0   0.0       0.0   0.0
+2                 0.0                   0.0               0.0                0  1323911501346869248  0.171579  ...        0.0    0.0    0.0   0.0       0.0   0.0
+3                 0.0                   0.0               0.0                0   616187058751713280  0.218730  ...        0.0    0.0    0.0   0.0       0.0   0.0
+4                 0.0                   0.0               0.0                0   788745486517829632  0.160557  ...        0.0    0.0    0.0   0.0       0.0   0.0
+
+[5 rows x 612 columns]
+(750, 612)
+(750, 607)
+(750,)
+format du jeu d'apprentissage : (525, 607)
+format du jeu de test : (225, 607)
+Répartition des classes :
+Classe 0 : 375 échantillons
+Classe 1 : 375 échantillons
+KFold sur KNN : accuracy moyenne : 0.6439042089985486 écart-type : 0.06800782296876706
+Accuracy : 0.6044444444444445
+Matrice de confusion
+[[96 17]
+ [72 40]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.57      0.85      0.68       113
+           1       0.70      0.36      0.47       112
+
+    accuracy                           0.60       225
+   macro avg       0.64      0.60      0.58       225
+weighted avg       0.64      0.60      0.58       225
+
+KFold sur DT : accuracy moyenne : 0.6739840348330913 écart-type : 0.06114493090007953
+Accuracy : 0.7066666666666667
+Matrice de confusion
+[[83 30]
+ [36 76]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.70      0.73      0.72       113
+           1       0.72      0.68      0.70       112
+
+    accuracy                           0.71       225
+   macro avg       0.71      0.71      0.71       225
+weighted avg       0.71      0.71      0.71       225
+
+KFold sur GNB : accuracy moyenne : 0.6493105950653119 écart-type : 0.05871411441315565
+Accuracy : 0.64
+Matrice de confusion
+[[62 51]
+ [30 82]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.67      0.55      0.60       113
+           1       0.62      0.73      0.67       112
+
+    accuracy                           0.64       225
+   macro avg       0.65      0.64      0.64       225
+weighted avg       0.65      0.64      0.64       225
+
+KFold sur SVC : accuracy moyenne : 0.7655297532656025 écart-type : 0.044391139228086816
+Accuracy : 0.8311111111111111
+Matrice de confusion
+[[91 22]
+ [16 96]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.85      0.81      0.83       113
+           1       0.81      0.86      0.83       112
+
+    accuracy                           0.83       225
+   macro avg       0.83      0.83      0.83       225
+weighted avg       0.83      0.83      0.83       225
+
+KFold sur RF : accuracy moyenne : 0.7445573294629899 écart-type : 0.05895751906774628
+Accuracy : 0.8488888888888889
+Matrice de confusion
+[[94 19]
+ [15 97]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.86      0.83      0.85       113
+           1       0.84      0.87      0.85       112
+
+    accuracy                           0.85       225
+   macro avg       0.85      0.85      0.85       225
+weighted avg       0.85      0.85      0.85       225
+
+KFold sur LR : accuracy moyenne : 0.7579825834542816 écart-type : 0.049547370822074
+Accuracy : 0.8355555555555556
+Matrice de confusion
+[[91 22]
+ [15 97]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.86      0.81      0.83       113
+           1       0.82      0.87      0.84       112
+
+    accuracy                           0.84       225
+   macro avg       0.84      0.84      0.84       225
+weighted avg       0.84      0.84      0.84       225

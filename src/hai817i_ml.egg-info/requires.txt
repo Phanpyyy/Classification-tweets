@@ -1,0 +1,11 @@
+contractions
+joblib
+matplotlib
+numpy
+optuna
+pandas
+plotly
+scikit_learn
+seaborn
+spacy
+wordcloud

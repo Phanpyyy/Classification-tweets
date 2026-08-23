@@ -1,0 +1,45 @@
+Légère augmentation de la précision globale, mais le recall s'améliore sur la classe 1 (science) au détriment de la classe 0.
+
+neutre:
+Accuracy : 0.8976034858387799
+Matrice de confusion
+[[216  14]
+ [ 33 196]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.87      0.94      0.90       230
+           1       0.93      0.86      0.89       229
+
+    accuracy                           0.90       459
+   macro avg       0.90      0.90      0.90       459
+weighted avg       0.90      0.90      0.90       459
+
+meilleur param {'C': 10, 'gamma': 1, 'kernel': 'rbf', 'degree': 2, 'class_weight': None}:
+Accuracy : 0.8997821350762527
+Matrice de confusion
+[[205  25]
+ [ 21 208]]
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.91      0.89      0.90       230
+           1       0.89      0.91      0.90       229
+
+    accuracy                           0.90       459
+   macro avg       0.90      0.90      0.90       459
+weighted avg       0.90      0.90      0.90       459
+
+
+Le modèle neutre est plutot prudent pour prédire si un tweet est scientifique ou non. Il en rate 14%, mais ne se trompe qu'à 7% (faux positif)
+Le modèle optimisée améliorer de 5 points sont recall, au détriment de la précision baissant de 4 points.
+
+
+Le modèle neutre est plus pertinent si les données à prédire sont critiques (peu ou pas d'erreur acceptée)
+Le modèle optimisée est plus intéressant si on accepte un peu de bruit. 
+
+L'optimisation n'a pas vraiment augmenté le score (on gagne 0.2 % d'accuracy, c'est négligeable). En revanche, elle a rééquilibré le modèle. Le modèle optimisé est plus "symétrique" (ses scores 0 et 1 sont presque identiques à 0.90).
+
+Le C : 10 pénalise lourdement les erreurs d'entrainement.
+rbf permet de créer des frontières de décisions en courbes > complexité.
+Ces hyperparm semblent créer des frontières plus complexes et qui collent aux données. Risque overfitting ?

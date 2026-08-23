@@ -1,0 +1,42 @@
+Comment savoir ce qu'on doit renseigner dans les hyperparam de get_param(classifier_name)
+
+
+--- rep ---
+Le choix des hyperparamètres à tester dans ta fonction `get_param(classifier_name)` ne se fait pas au hasard. C'est un mélange de **connaissance théorique** de l'algorithme, de la **nature de tes données**, et de **contraintes de calcul**.
+
+Voici les trois piliers pour savoir quoi renseigner :
+
+---
+
+### 1. Consulter la Documentation Officielle (Scikit-Learn)
+C'est la règle d'or. Chaque classifieur possède des paramètres par défaut. Ton but est de tester des variantes autour de ces valeurs.
+* **Identifie les paramètres sensibles :** Pour une Forêt Aléatoire (`RF`), la documentation indique que `n_estimators` et `max_depth` sont critiques pour la performance.
+* **Comprends les échelles :** Certains paramètres sont logarithmiques (comme le `C` du `SVC` ou de la `LR`), c'est pourquoi tu as sagement testé `[0.1, 1, 10]` ou `[0.001, 0.01, ...]`.
+
+### 2. Adapter à la Nature du Problème
+Ton projet semble porter sur la classification de tweets (liés à la science ou non).
+* **Complexité vs Bruit :** Si tes données sont très bruitées (langage Twitter), tu dois privilégier des paramètres qui régularisent (empêchent le sur-apprentissage). Par exemple, augmenter `min_samples_leaf` dans tes arbres (`DT`) ou réduire le `C` dans ton `SVC`.
+* **Déséquilibre des classes :** Ton code prévoit déjà `class_weight='balanced'`. Si tes classes sont très déséquilibrées, tester différents types de `criterion` ("gini" vs "entropy") peut être pertinent pour voir comment le modèle sépare les groupes.
+
+### 3. Les Incontournables par Modèle
+Voici un guide rapide pour compléter ton dictionnaire `hyper_param` :
+
+| Modèle | Hyperparamètre Clé | Pourquoi le tester ? |
+| :--- | :--- | :--- |
+| **Random Forest (RF)** | `n_estimators` | Plus il y en a, mieux c'est, jusqu'à un certain plateau de stabilité. |
+| **RF / Decision Tree** | `max_depth` | Contrôle la complexité. Trop profond = sur-apprentissage (overfitting). |
+| **SVC** | `kernel` | "linear" est rapide, "rbf" permet de capturer des relations non-linéaires complexes. |
+| **KNN** | `n_neighbors` | Un petit nombre capture les détails locaux, un grand nombre lisse la décision. |
+| **Logistic Reg (LR)** | `C` | Plus `C` est petit, plus la régularisation est forte (modèle plus simple). |
+
+
+
+---
+
+### Conseil Pratique pour ton Code
+Dans ton fichier `data_projet.py`, tu as déjà des listes de valeurs. Pour savoir si elles suffisent :
+1.  **Vérifie les bornes :** Si Optuna te renvoie systématiquement la valeur maximale de ta liste (ex: `n_estimators: 9`), cela signifie que tu devrais probablement tester des valeurs plus hautes (10, 20, 50).
+2.  **Densité de recherche :** Pour un premier jet, garde des listes courtes comme tu l'as fait pour gagner du temps. Une fois le meilleur modèle identifié, affine la grille autour de la valeur gagnante.
+3.  **Utilise les types de Suggestion d'Optuna :** Dans ton `get_best_params_optuna`, tu utilises `suggest_categorical`. Pour des valeurs numériques comme le `C`, tu pourrais utiliser `trial.suggest_float("C", 1e-3, 1e2, log=True)` pour qu'Optuna explore intelligemment entre 0.001 et 100 sans que tu aies à l'écrire à la main.
+
+As-tu un doute sur un paramètre spécifique que tu as vu dans la documentation mais que tu n'as pas encore ajouté ?
