@@ -1,5 +1,0 @@
-analyses
-code_python
-graph
-matrices
-pipelines

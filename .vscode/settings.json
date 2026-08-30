@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./recherche-classifieur"
-    ],
-    "python-envs.defaultEnvManager": "ms-python.python:system"
-}
