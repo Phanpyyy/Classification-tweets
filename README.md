@@ -7,6 +7,12 @@ Lien pour ouvrir le notebook sur votre navigateur :
 
 ---
 
+## Stack
+ 
+Python · scikit-learn · imbalanced-learn · spaCy · Optuna · pandas
+
+---
+
 ## Fonctionnalités
 
 - Nettoyage (URLs, hashtags, emojis, mentions, ponctuations) et vectorisation (TF-IDF) des tweets bruts
@@ -50,9 +56,9 @@ Le notebook est organisé en 8 sections à exécuter dans l'ordre :
 
 | Tâche | Meilleur modèle | Accuracy | F1 (macro) |
 |---|---|---|---|
-| SCI vs NON-SCI | RF | 0,76 | 0,74 |
-| Affirmation/Référence vs Contexte | RF | 0,87 | 0,61 |
-| Affirmation vs Référence vs Contexte | SVC | 0,75 | 0,63 |
+| SCI vs NON-SCI | RF | 0.76 | 0.74 |
+| Affirmation/Référence vs Contexte | RF | 0.87 | 0.61 |
+| Affirmation vs Référence vs Contexte | SVC | 0.75 | 0.63 |
 
 <br>
 <p align="center"><b>Visuels SCI vs NON-SCI</b></p>
