@@ -3,7 +3,8 @@
 Projet réalisé dans le cadre du cours HAI817 (Machine Learning) à l'Université de Montpellier. 
 Pipeline qui classe des tweets selon leur rapport à la science : scientifique ou non, affirmation, référence ou contexte. Entraîné et évalué sur le dataset [SciTweets](https://dl.acm.org/doi/10.1145/3511808.3557687) (Hafid et al., 2022, CIKM).
 
-Lien pour ouvrir le notebook sur votre navigateur : 
+Lien pour ouvrir le notebook sur votre navigateur : [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/phanpyyy/classification-tweets/main)
+<br>Notebook présent dans notebooks/main.ipynb puis run all et regarder la partie Main (choix de la tâche puis du classifieur...)
 
 ---
 
@@ -54,14 +55,16 @@ Le notebook est organisé en 8 sections à exécuter dans l'ordre :
 
 ## Résultats
 
+### Performance globale
+
 | Tâche | Meilleur modèle | Accuracy | F1 (macro) |
 |---|---|---|---|
 | SCI vs NON-SCI | RF | 0.76 | 0.74 |
 | Affirmation/Référence vs Contexte | RF | 0.87 | 0.61 |
 | Affirmation vs Référence vs Contexte | SVC | 0.75 | 0.63 |
 
-<br>
-<p align="center"><b>Visuels SCI vs NON-SCI</b></p>
+
+### Visualisations SCI vs NON-SCI
 <table>
   <tr>
     <td width="50%">
@@ -73,7 +76,7 @@ Le notebook est organisé en 8 sections à exécuter dans l'ordre :
   </tr>
 </table>
 
-**Top features — science_related**
+### Top features — SCI vs NON-SCI
 
 | feature           |     score |
 |:------------------|----------:|
