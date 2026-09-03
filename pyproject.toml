@@ -8,6 +8,8 @@ version = "0.1.0"
 description = "Projet Machine Learning - Méthodes classiques"
 dependencies = [
     "contractions",
+    "emoji",
+    "imbalanced-learn",
     "joblib",
     "matplotlib",
     "numpy",
@@ -17,13 +19,6 @@ dependencies = [
     "scikit-learn",
     "seaborn",
     "spacy",
+    "sqlalchemy",
     "wordcloud"
 ]
-
-[tool.setuptools]
-# On indique à setuptools où chercher le code source
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-# On lui dit de scanner le dossier src pour trouver les packages automatiquement
-where = ["src"]
