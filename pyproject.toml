@@ -14,7 +14,7 @@ dependencies = [
     "optuna",
     "pandas",
     "plotly",
-    "scikit_learn",
+    "scikit-learn",
     "seaborn",
     "spacy",
     "wordcloud"
