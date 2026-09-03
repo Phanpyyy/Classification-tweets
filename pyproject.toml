@@ -22,3 +22,7 @@ dependencies = [
     "sqlalchemy",
     "wordcloud"
 ]
+
+[tool.setuptools]
+# On indique explicitement à setuptools de ne chercher aucun package Python à compiler
+packages = []
