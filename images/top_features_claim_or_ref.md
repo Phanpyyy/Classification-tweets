@@ -2,26 +2,26 @@
 
 ## Modèle : RF_claim_or_ref
 
-| feature    |     score |
-|:-----------|----------:|
-| USER       | 0.0631588 |
-| research   | 0.0595621 |
-| support    | 0.0468443 |
-| science    | 0.0401299 |
-| USER USER  | 0.0296719 |
-| april url  | 0.0282323 |
-| april      | 0.0248814 |
-| conference | 0.0237602 |
-| url url    | 0.0226869 |
-| public     | 0.0207921 |
-| workshop   | 0.020256  |
-| die        | 0.0201399 |
-| USER url   | 0.0200135 |
-| increase   | 0.0199636 |
-| study      | 0.0187948 |
-| grant      | 0.0184878 |
-| people     | 0.017793  |
-| break      | 0.0173923 |
-| future     | 0.0168959 |
-| community  | 0.0157203 |
+| feature      |     score |
+|:-------------|----------:|
+| research     | 0.102402  |
+| support      | 0.0908689 |
+| science      | 0.0656375 |
+| science url  | 0.0435375 |
+| late         | 0.0337487 |
+| grant        | 0.0276367 |
+| research url | 0.0263881 |
+| conference   | 0.0252264 |
+| url url      | 0.0246578 |
+| april        | 0.0243097 |
+| april url    | 0.0237354 |
+| human        | 0.0206141 |
+| workshop     | 0.0202526 |
+| evidence     | 0.0197099 |
+| bring        | 0.0196669 |
+| public       | 0.0184791 |
+| information  | 0.0182862 |
+| break        | 0.0151244 |
+| cancer       | 0.0130094 |
+| future       | 0.0126952 |
 

@@ -2,26 +2,26 @@
 
 ## Modèle : SVC_type_assertion
 
-| feature        |   score |
-|:---------------|--------:|
-| late           | 2.69014 |
-| USER           | 2.32489 |
-| depression     | 2.31348 |
-| medical        | 2.27903 |
-| science        | 2.03822 |
-| public         | 1.77944 |
-| url USER       | 1.68064 |
-| increase       | 1.67534 |
-| manage         | 1.5156  |
-| url            | 1.50775 |
-| institute      | 1.50118 |
-| USER url       | 1.487   |
-| die            | 1.48456 |
-| world          | 1.47963 |
-| help           | 1.47155 |
-| program        | 1.46256 |
-| USER USER USER | 1.44377 |
-| impact         | 1.40059 |
-| scientist      | 1.39925 |
-| conference     | 1.39059 |
+| feature           |    score |
+|:------------------|---------:|
+| support           | 21.5805  |
+| hashtag_eurekamag | 14.6541  |
+| research          | 11.5817  |
+| april             | 11.0797  |
+| april url         | 11.0797  |
+| workshop          | 10.1152  |
+| science           |  9.90626 |
+| science url       |  8.48501 |
+| conference        |  8.21972 |
+| late              |  6.34531 |
+| bring             |  6.089   |
+| house             |  5.4252  |
+| grant             |  5.4252  |
+| break             |  5.42507 |
+| increase          |  5.33487 |
+| die               |  4.84604 |
+| post              |  4.32378 |
+| transmission      |  4.15413 |
+| non               |  3.9195  |
+| funding           |  3.89131 |
 
